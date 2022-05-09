@@ -1,16 +1,25 @@
 /* Set bg image */
 .bgImage {
     height: 600px;
-    background: url("../Assets/download\ \(1\).jpg");
+    background: url("../Assets/Bg.jpg");
     background-size: cover;
     position: relative;
     overflow: hidden;
 
 }
+
+.bgimage-val{
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  top: 30%;
+  right: 15%;
+  border-radius:50%;
+}
 /* Make text larger*/
 /* title */
 .hero_title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   
   /* desc */
@@ -22,16 +31,17 @@
     color: white;
     margin-left: 20vw;
   }
+
   
-  .hero_text {
+.hero_text {
     text-align: center;
     position: inherit;
-    top: 50%;
-    left: 50%;
+   top: 50%;
+     left: 50%;
     transform: translate(50%, 50%) !important;
-  }
+  } 
   
-  /* Remove deafults  */
+
   h1,
   h2,
   h3,
@@ -39,5 +49,5 @@
   h5,
   h6 {
     margin-top: 5em !important;
-  }
+  } 
   
