@@ -1,11 +1,18 @@
+body{
+  overflow-y: scroll;
+}
+
+.navbar .container{
+  margin-left: 10px;
+}
 /* Set bg image */
 .bgImage {
+    /* margin: 20px; */
     height: 600px;
     background: url("../Assets/Bg.jpg");
     background-size: cover;
     position: relative;
     overflow: hidden;
-
 }
 
 .bgimage-val{
@@ -26,22 +33,26 @@
   .hero_desc {
     font-size: 1rem;
   }
+ 
+  #desc{
+    margin-left: 20px;
+  }
   
   .container-fluid {
     color: white;
     margin-left: 20vw;
+    display:inline;
   }
 
-  
 .hero_text {
     text-align: center;
     position: inherit;
-   top: 50%;
-     left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(50%, 50%) !important;
   } 
   
-
+  
   h1,
   h2,
   h3,
@@ -50,4 +61,75 @@
   h6 {
     margin-top: 5em !important;
   } 
-  
+
+  /* ABOUT SECTION */
+  .about-me{
+    /* margin: 20px; */
+    background:rgb(223, 168, 195);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .AboutImage-Val{
+    width: 70%;
+    float: right;
+    border-radius: 5%;
+    box-shadow: 0 0 10px;
+  }
+  .AboutImage-Val:hover{
+    border: 5px solid grey;
+  }
+
+  .view-portfolio{
+    position: relative;
+    left: 50px;
+    top: 10px;
+  }
+
+  .change-my-position {
+    position: relative;
+    left: 50px;
+    top: 12px;
+  }
+/* End of About Section */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .hero_desc {
+    font-size: 1rem;
+  }
+
+  .hero-text {
+    margin-top: 10em;
+    top: 50%;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .hero_desc {
+    font-size: 1rem;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .hero_desc {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    margin-top: 0.1em;
+    /* top: 50%; */
+  }
+}
