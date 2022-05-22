@@ -70,7 +70,7 @@
     <!-- Banner End -->
 
     <!-- About me section -->
-    <section class="about-me">
+    <!-- <section class="about-me"> 
       <div class="container row">
         <h2 class="about-title" id="about">About me</h2>
         <div class="col">
@@ -91,7 +91,7 @@
             <h6><strong>Phone Number: </strong><a href="tel:+254793514706">+254793514706</a></h6>
           </div>
           <div class="col">
-            <img src="../Assets/About-image.jpg" class="img-responsive img-fluid AboutImage-Val" id="ValsImg">
+            <img src="../Assets/About-image.jpg" class="img-responsive AboutImage-Val" id="ValsImg">
             <button class="btn btn-primary view-portfolio">View my Portfolio</button>
             <button class="btn btn-danger change-my-position" onclick="changeImage();">Change My Position</button>
             <span id="output">replace me</span>
@@ -101,33 +101,148 @@
         </div>
       </div>
     </section>
+  -->
+  <!-- about section start -->
+  <section class="container about-me" id="about">
+    <div class="card text-center">
+      <div class="card-header">
+        About me
+      </div>
+      <div class="card-body">
+        <p class="card-text">I am a student at Jomo Kenyatta University of Agriculture and Technology pursuing Bachelor of Science in Geospatial Information Science. I actively take part in various programs such as Association of Geospatial and Geomatics Engineering Students(AGGES), Society Of Engineering Students(SES) in campus and also am an active student member in ISK(Institution of Surveyors of Kenya). I also take part in mentorship programs that empower the youth and also students in High School to pursue tech-related careers.  I am; Very ambitious, eager to always learn more, a team player, a good leader and also a good communicator.</p>
+        <a href="" class="btn btn-primary">Download my Resume</a>
+        <a href="mailto:irunguvalentine73@gmail.com" class="btn btn-primary">Send me an email</a>
+      </div>
 
-    <!-- About me 
-    <section class="aboutme">
-      <div class="container" id="about">
-        <h2>About Me</h2>
-      
-         <div class="row"> 
-          <div class="col">
-            <img src="../Assets/download (1).jpg" class="AboutImage-val">
-            <div>
-              <div class="col">
-                 About me content -->
-                <!-- <h1> Engineering Student &amp; Geospatial Information Science Student</h1>
-                <p>I am a student at Jomo Kenyatta University of Agriculture and Technology pursuing Bachelor of Science in Geospatial Information Science. I actively take part in various programs such as Association of Geospatial and Geomatics Engineering Students(AGGES), Society Of Engineering Students(SES) in campus and also am an active student member in ISK(Institution of Surveyors of Kenya). I also take part in mentorship programs that empower the youth and also students in High School to pursue tech-related careers.  I am; Very ambitious, eager to always learn more, a team player, a good leader and also a good communicator.
-                  .</p>
-                <ul>
-                  <li><strong>Age:</strong><span>21</span></li>
-                  <li><strong>Phone Number:</strong><span>+254712345678</span></li>
-                  <li><strong>Email:</strong><span>irunguvalentine73@gmail.com</span></li>
-                  <li><strong>Location</strong><span>Kiambu, Kenya</span></li>
-                </ul>
-              </div>
-            </div>
+    </div>
+
+  </section>
+
+  <section class="container contact-me" id="contact">
+    <div class="container" id="contact-header">
+      <h2>Contact me</h2>
+      <p>Know where am from, or leave me a message</p>
+    </div>
+    <div class="row" id="contact-col1">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127649.74784541126!2d36.981477560721046!3d-1.1210615117083524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4616a21d035d%3A0xd46c6efa3589f45f!2sJuja!5e0!3m2!1sen!2ske!4v1653216409928!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="column" id="contact-col2">
+      <form name="frmContact"
+      id="frmContact"
+      method="post"
+      action=""
+      enctype="multipart/form-data"
+      novalidate
+    >
+      <div class="row">
+        <div class="form-group col-md-4">
+          <label>Name</label>
+          <span id="userName-info" class="invalid-feedback"></span>
+          <div class="input-group">
+            <div class="input-group-prepend"></div>
+            <input
+              type="text"
+              class="form-control"
+              name="userName"
+              id="userName"
+              required
+            />
           </div>
         </div>
       </div>
-     </section> -->
+      <div class="row">
+        <div class="form-group col-md-4">
+          <label>Email</label>
+          <span id="userEmail-info" class="invalid-feedback"></span>
+          <div class="input-group">
+            <div class="input-group-prepend"></div>
+            <input
+              type="email"
+              name="userEmail"
+              id="userEmail"
+              class="form-control"
+              required
+            />
+          </div>
+          <small id="emailHelp" class="form-text text-muted"
+            >Your email will not be shared.</small
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-8">
+          <label>Subject</label>
+          <span id="subject-info" class="invalid-feedback"></span>
+          <div class="input-group">
+            <div class="input-group-prepend"></div>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-8">
+          <label>Message</label>
+          <span id="content-info" class="invalid-feedback"></span>
+          <div class="input-group">
+            <div class="input-group-prepend"></div>
+            <textarea
+              class="form-control"
+              rows="5"
+              name="message"
+              id="message"
+              required
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input
+            type="submit"
+            name="send"
+            class="btn btn-primary"
+            value="Send Message"
+          />
+        </div>
+      </div>
+      <!-- <div class="row">
+      <div class="col-md-8">
+          <div id="statusMessage" class="alert alert-success mt-3"
+              role="alert">
+          </div>
+      </div>
+  </div> -->
+    </form>
+
+
+
+
+      <!-- <form action="index.html"> 
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="'firstname" placeholder="Your first name...">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Kenya">Kenya</option>
+          <option value="Tanzania">Tanzania</option>
+          <option value="Uganda">Uganda</option>
+          <option value="Zambia">Zambia</option>
+          <option value="Ghana">Ghana</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Leave me a message.."></textarea>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form> -->
+    </div>
+  </section> 
+
      <script src="js/portfolio.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

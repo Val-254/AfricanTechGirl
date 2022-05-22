@@ -37,6 +37,13 @@ body{
   #desc{
     margin-left: 20px;
   }
+  .img-fluid {
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+  }
   
   .container-fluid {
     color: white;
@@ -92,10 +99,39 @@ body{
   }
 /* End of About Section */
 
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .img-fluid {
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+  }
+
+  .hero_title {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    margin-top: 10em;
+    top: 50%;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   body {
     overflow-y: scroll;
+  }
+  .img-fluid {
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
   }
 
   .hero_desc {
@@ -114,6 +150,13 @@ body{
   body {
     overflow-y: scroll;
   }
+  .img-fluid {
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+  }
 
   .hero_desc {
     font-size: 1rem;
@@ -123,6 +166,13 @@ body{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .img-fluid {
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+  }
 
   .hero_desc {
     font-size: 2rem;
