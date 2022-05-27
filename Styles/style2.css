@@ -70,8 +70,8 @@ body{
   } 
 
   /* ABOUT SECTION */
-  .about-me{
-    /* margin: 20px; */
+  /* .about-me{ 
+    /* margin: 20px; 
     background:rgb(223, 168, 195);
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,8 +96,9 @@ body{
     position: relative;
     left: 50px;
     top: 12px;
-  }
+  } */
 /* End of About Section */
+
 
 @media only screen and (max-width: 600px) {
   body {
